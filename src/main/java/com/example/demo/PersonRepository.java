@@ -8,5 +8,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
-    List<NameProjection>  findByNameContains(@Param("name") String name);
+    List<Person> findByNameContains(@Param("name") String name);
 }

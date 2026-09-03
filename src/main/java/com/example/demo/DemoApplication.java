@@ -32,7 +32,7 @@ public class DemoApplication implements CommandLineRunner {
     }
 
     @RequestMapping("test/findByNameContains")
-    public List<NameProjection> findByNameContains(@Param("name") String name){
+    public List<Person> findByNameContains(@Param("name") String name){
         return personRepository.findByNameContains(name);
     }
 
